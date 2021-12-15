@@ -1,0 +1,105 @@
+.news {
+    background-color: #08020D;
+    &__container {
+        padding-top: 100px;
+    }
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__row {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // gap: 50px;
+        display: flex;
+        margin-bottom: 65px;
+        flex-direction: row;
+        box-sizing:border-box;
+        &:first-child {
+            & div {
+                &:first-child {
+                    padding-right: 25px;
+                    padding-left: 0;
+    
+                }
+                &:last-child {
+                    padding-left: 25px;
+                    padding-right: 0;
+                }
+            }
+
+        }
+        &:last-child {
+            margin-bottom: 0;
+            flex-direction: row-reverse;
+            & div {
+                &:first-child {
+                    padding-left: 25px;
+                    padding-right: 0;
+                    
+                }
+                &:last-child {
+                    padding-right: 25px;
+                    padding-left: 0;
+                }
+            }
+        }
+
+    }
+    &__img,
+    &__info {
+        flex: 50% 0 0;
+        box-sizing: border-box;
+    }
+
+    &__img {
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 300px;
+        }
+    }
+
+    &__small-title {
+        font-size: 30px;
+        line-height: 1.5;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+    &__descr {
+        line-height: 1.5;
+        color: #CACACA;
+        margin-bottom: 24px;
+    }
+
+    &__trivia {
+        display: flex;
+        margin-bottom: 48px;
+    }
+    &__author,
+    &__date,
+    &__link {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #F89202;
+        margin-right: 16px;
+        & img {
+            margin-right: 16px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 16px 31px;
+        border: 1px solid #CACACA;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #CACACA;
+    }
+}

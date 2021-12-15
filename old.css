@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-weight: 700;
     font-family: "Roboto Bold";
     src: url("/fonts/Roboto Bold.ttf");
@@ -21,9 +21,9 @@ body {
 
     font-family: "Roboto Bold", sans-serif;
     color: #FFFFFF;
-}
+} */
 
-h1 {
+/* h1 {
     font-family: "Roboto Bold", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -197,7 +197,7 @@ and (max-device-width : 480px) {
     font-size: 11px;
     line-height: 1.5;
     text-transform: uppercase;
-}
+} */
 
 form > .send {
     font-family: "Roboto Regular", sans-serif;
