@@ -160,6 +160,35 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out; }
+
+.shine-button:before {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.5)));
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: -8px;
+  left: -95px;
+  -webkit-transform: skewX(-45deg);
+      -ms-transform: skewX(-45deg);
+          transform: skewX(-45deg); }
+
+.shine-button:hover:before {
+  left: 610px;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out; }
+
 .main-screen {
   background-image: url("../img/banner-1.png");
   background-repeat: no-repeat;
