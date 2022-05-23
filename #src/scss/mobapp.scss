@@ -1,26 +1,51 @@
 .mobapp {
-
+    background-color: #08020D;
     // .mobapp__container
 
-    &__container {}
+    &__container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     // .mobapp__title
 
-    &__title {}
+    &__title {
+        margin-bottom: 48px;
+    }
 
     // .mobapp__block
 
-    &__block {}
+    &__block {
+        display: flex;
+        // flex: 0 1 50%;
+    }
 
     // .mobapp__collumn-text
-
-    &__collumn-text {}
+    // .mobapp__collumn-img
+    &__column-text,
+    &__column-img {
+        flex: 50% 0 0;
+    }
 
     // .mobapp__link
 
-    &__link {}
+    &__link {
+        background: #95390C;
+        border-radius: 32px;
+        padding: 17px 40px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
 
-    // .mobapp__collumn-img
+    &__column-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    &__column-img {}
+        img {
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+    }
 }
