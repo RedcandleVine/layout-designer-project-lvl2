@@ -19,12 +19,14 @@ body {
 
     font-family: "Roboto Regular", sans-serif;
     color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.wraper {  
+.wraper {
     margin: 0 auto;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1230px;
     padding: 0 15px;
 
 }
@@ -40,8 +42,7 @@ h1 {
     margin: 0;
 }
 
-@media only screen  
-and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     h1 {
         font-family: "Roboto Bold", sans-serif;
         font-style: normal;
@@ -50,11 +51,11 @@ and (max-device-width: 480px) {
         line-height: 1.5;
         text-transform: uppercase;
         text-align: center;
-    
+
         margin: 0;
 
     }
-    
+
 }
 
 h2 {
@@ -69,13 +70,12 @@ h2 {
     margin: 0;
 }
 
-@media only screen 
-and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     h2 {
         font-size: 18px;
         line-height: 1.5;
     }
-    
+
 }
 
 h3 {
@@ -88,13 +88,12 @@ h3 {
     margin: 0;
 }
 
-@media only screen 
-and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     h3 {
         font-size: 16px;
         line-height: 1.5;
     }
-    
+
 }
 
 button {

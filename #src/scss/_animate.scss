@@ -10,10 +10,10 @@
 .shine-button:before {
     content: "";
     background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-    height: 70px;
+    height: 80px;
     width: 70px;
     position: absolute;
-    top: -8px;
+    top: -14px;
     left: -95px;
     transform: skewX(-45deg);
 }

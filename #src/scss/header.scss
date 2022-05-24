@@ -1,5 +1,6 @@
 .header {
     margin-bottom: -75px;
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -8,7 +9,7 @@
 
     &__item {
         display: flex;
-        align-items:center;
+        align-items: center;
     }
 
     & .logo {
@@ -18,6 +19,7 @@
         text-transform: uppercase;
         color: #fff;
         margin-right: 90px;
+
         & img {
             margin-right: 16px;
         }
@@ -37,6 +39,7 @@
         border: none;
         width: 248px;
         color: #757575;
+
         &::placeholder {
             color: #757575;
         }
@@ -58,14 +61,18 @@
     &__list-item {
         margin-right: 24px;
         transition: all 0.3s ease;
+
         & a {
             color: #cacaca;
             text-decoration: none;
             text-transform: uppercase;
-        }
-    }
+            transition: all 0.3s ease;
 
-    &__list-item:hover a {
-        color: #fff;
+            &:hover,
+            &:active {
+                color: #FFFFFF;
+                text-shadow: 2px 0 5px #fff;
+            }
+        }
     }
 }
