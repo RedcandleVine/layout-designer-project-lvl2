@@ -52,3 +52,15 @@
         }
     }
 }
+
+@media (max-width: 700px) {
+    .mobapp {
+        &__block {
+            flex-direction: column-reverse;
+        }
+
+        &__column-img {
+            margin-bottom: 16px;
+        }
+    }
+}
