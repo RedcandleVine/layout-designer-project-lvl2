@@ -101,6 +101,10 @@
 
 @media (max-width: 600px) {
     .main-screen {
+
+        justify-content: flex-end;
+        padding-bottom: 50px;
+
         &__form-row {
             &:first-child {
                 flex-direction: column;

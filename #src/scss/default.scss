@@ -31,6 +31,22 @@ body {
 
 }
 
+main {
+    margin-top: -55px;
+}
+
+@media (max-width: 850px) {
+    main {
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin-top: -185px;
+    }
+}
+
 h1 {
     font-family: "Roboto Bold", sans-serif;
     font-style: normal;

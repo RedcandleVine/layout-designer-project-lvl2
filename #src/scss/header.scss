@@ -1,10 +1,10 @@
 .header {
-    margin-bottom: -75px;
+    padding-top: 25px;
+    height: 55px;
 
     &__container {
         display: flex;
         justify-content: space-between;
-        height: 75px;
     }
 
     &__item {
@@ -118,7 +118,8 @@
 
 @media (max-width: 850px) {
     .header {
-        margin-bottom: -110px;
+        height: 110px;
+        padding-top: 10px;
 
         &__item,
         & .main-menu__list {
@@ -132,14 +133,10 @@
         }
 
         &__container {
-            height: 110px;
-            padding-top: 15px;
             justify-content: flex-start;
         }
 
-        & .logo {
-            margin-bottom: 17px;
-        }
+        & .logo {}
 
         &__item {
             &:last-child {
@@ -156,9 +153,20 @@
 
 @media (max-width: 600px) {
     .header {
+        height: 185px;
+
         &__container {
             flex-direction: column;
-            margin-top: 18px;
+        }
+
+        &__sub-item {
+            &:first-child {
+                padding: 27px 0 17px 0;
+            }
+        }
+
+        & .search {
+            padding-top: 18px;
         }
     }
 }
