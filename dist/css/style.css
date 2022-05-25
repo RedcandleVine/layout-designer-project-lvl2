@@ -347,6 +347,7 @@ p {
   background-image: url("../img/banner-1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,6 +726,45 @@ p {
             flex-direction: column-reverse; }
   .mobapp__column-img {
     margin-bottom: 16px; } }
+
+.artist-screen {
+  background-image: url("../img/banner-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .artist-screen__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .artist-screen__button-block button {
+    border-radius: 5px;
+    width: 200px;
+    padding: 22px 31px;
+    display: inline-block; }
+
+.mix {
+  background: #5328A1; }
+
+.favourite {
+  background: #95390C; }
 
 .footer {
   background: -o-linear-gradient(184.92deg, #95390C 14.9%, #5328A1 68.95%);
