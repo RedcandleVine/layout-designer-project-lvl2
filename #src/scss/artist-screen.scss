@@ -18,16 +18,43 @@
 
     // .artist-screen__sub-title
 
-    &__sub-title {}
+    &__sub-title {
+        margin-top: 16px;
+    }
 
     // .artist-screen__button-block
 
     &__button-block {
+        display: flex;
+        margin-top: 48px;
+        flex-wrap: wrap;
+
         & button {
             border-radius: 5px;
             width: 200px;
             padding: 22px 31px;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            margin-right: 24px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:focus {
+                & path {
+                    transition: 0.3s all ease;
+
+                    &:last-child {
+                        fill: white;
+                    }
+
+                }
+            }
+
+            & svg {
+                margin-right: 16px;
+            }
         }
     }
 }
@@ -39,4 +66,19 @@
 
 .favourite {
     background: #95390C;
+}
+
+@media (max-width: 600px) {
+    .artist-screen {
+
+        &__button-block {
+            & button {
+                margin-bottom: 24px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }

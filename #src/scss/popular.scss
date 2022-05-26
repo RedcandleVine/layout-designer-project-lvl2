@@ -1,0 +1,77 @@
+.popular {
+    background-color: #08020D;
+    // .mobapp__container
+
+    &__container {
+        padding-top: 100px;
+    }
+
+    // .mobapp__title
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 49px;
+        row-gap: 25px;
+    }
+
+    // .popular__item
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item-column {
+        display: flex;
+        align-items: center;
+    }
+
+    // .popular__item-cover
+
+    &__item-cover {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        margin-right: 15px;
+
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    // .popular__item-title
+
+    &__item-title {}
+
+    // .popular__track-name
+
+    &__track-name {
+        font-weight: 700;
+        font-size: 12.8px;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    &__artist,
+    &__item-duration {
+        font-weight: 400;
+        font-size: 12.8px;
+        line-height: 150%;
+        color: #E0E0E0;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .popular {
+        &__block {
+            grid-template-columns: 1fr;
+        }
+    }
+}
