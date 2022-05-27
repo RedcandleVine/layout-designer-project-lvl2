@@ -806,10 +806,10 @@ p {
   .popular__block {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 49px;
-       -moz-column-gap: 49px;
-            column-gap: 49px;
-    row-gap: 25px; }
+    -webkit-column-gap: 29px;
+       -moz-column-gap: 29px;
+            column-gap: 29px;
+    row-gap: 5px; }
   .popular__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -819,7 +819,17 @@ p {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 10px;
+    -webkit-transform: 0.3 all ease;
+        -ms-transform: 0.3 all ease;
+            transform: 0.3 all ease; }
+    .popular__item:hover, .popular__item:active {
+      border-radius: 5px;
+      background-color: #2c2c2c; }
+    .popular__item:focus {
+      border-radius: 5px;
+      background-color: #4d4c4c; }
   .popular__item-column {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -860,10 +870,22 @@ p {
   .discography__block {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
-    row-gap: 25px; }
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 5px; }
+  .discography__item {
+    padding: 10px;
+    -webkit-transform: 0.3 all ease;
+        -ms-transform: 0.3 all ease;
+            transform: 0.3 all ease;
+    display: block; }
+    .discography__item:hover, .discography__item:active {
+      border-radius: 5px;
+      background-color: #2c2c2c; }
+    .discography__item:focus {
+      border-radius: 5px;
+      background-color: #4d4c4c; }
   .discography__item-image {
     margin-bottom: 18px;
     max-width: 250px;
@@ -876,7 +898,9 @@ p {
   .discography__item-title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 150%; }
+    line-height: 150%;
+    text-decoration: none;
+    color: #fff; }
   .discography__item-year {
     font-weight: 400;
     font-size: 16px;
@@ -901,7 +925,19 @@ p {
   .similar__block {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px 50px; }
+    gap: 5px 30px; }
+  .similar__item {
+    display: block;
+    padding: 10px;
+    -webkit-transform: 0.3 all ease;
+        -ms-transform: 0.3 all ease;
+            transform: 0.3 all ease; }
+    .similar__item:hover, .similar__item:active {
+      border-radius: 5px;
+      background-color: #2c2c2c; }
+    .similar__item:focus {
+      border-radius: 5px;
+      background-color: #4d4c4c; }
   .similar__item-image {
     max-height: 250px;
     max-width: 250px;
@@ -916,7 +952,9 @@ p {
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none;
+    color: #fff; }
   .similar__item-count {
     font-weight: 400;
     font-size: 16px;
