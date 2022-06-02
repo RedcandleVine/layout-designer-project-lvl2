@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page navigation - MUSIC BOX</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    @@include("../components/_header.html")
+    <main>
+        <section class="page-nav">
+            <div class="wraper">
+                <div class="page-nav__container">
+                    <h1>Page navigation</h1>
+                    <div class="page-nav__button-block">
+                        <a href="./index.html" class="mix shine-button">
+                            <span>Home</span>
+                        </a>
+                        <a href="./artist.html" class="favourite shine-button">
+                            <span>Artist page</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .page-nav {
+            background-image: url("../img/banner-3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .page-nav__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .page-nav__button-block {
+            display: flex;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+
+        .page-nav__button-block a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            width: 200px;
+            padding: 22px 31px;
+            display: flex;
+            align-items: center;
+            margin-right: 24px;
+        }
+
+        .page-nav__button-block a:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 600px) {
+            .page-nav__button-block a {
+                margin-bottom: 24px;
+            }
+
+            .page-nav__button-block a:last-child {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+    @@include("../components/_footer.html")
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page navigation - MUSIC BOX</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+  <div class="wraper">
+    <div class="header__container">
+      <div class="header__item">
+        <div class="header__sub-item">
+          <a href="#" class="logo">
+            <img src="img/logo-1.png" />
+            <span class="logo-name">Music Box</span>
+          </a>
+        </div>
+        <div class="header__sub-item">
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__list-item">
+                <a href="#" title="Главная">Главная</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" title="Каталог">Каталог</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" title="Исполнители">Исполнители</a>
+              </li>
+              <li class="main-menu__list-item">
+                <a href="#" title="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__item">
+        <form class="search">
+          <input type="text" placeholder="ПОИСК..." />
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+        <section class="page-nav">
+            <div class="wraper">
+                <div class="page-nav__container">
+                    <h1>Page navigation</h1>
+                    <div class="page-nav__button-block">
+                        <a href="./index.html" class="mix shine-button">
+                            <span>Home</span>
+                        </a>
+                        <a href="./artist.html" class="favourite shine-button">
+                            <span>Artist page</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .page-nav {
+            background-image: url("../img/banner-3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .page-nav__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .page-nav__button-block {
+            display: flex;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+
+        .page-nav__button-block a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            width: 200px;
+            padding: 22px 31px;
+            display: flex;
+            align-items: center;
+            margin-right: 24px;
+        }
+
+        .page-nav__button-block a:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 600px) {
+            .page-nav__button-block a {
+                margin-bottom: 24px;
+            }
+
+            .page-nav__button-block a:last-child {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+    <footer class="footer">
+  <div class="footer__row">
+    <div class="wraper">
+      <div class="footer__column">
+        <div class="footer__column-title">О нас</div>
+        <div class="footer__column-info">
+          <a href="#">История компании</a>
+          <a href="#">Карьера</a>
+          <a href="#">Особенности</a>
+          <a href="#">Пресса</a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <div class="footer__column-title">Поддержка</div>
+        <div class="footer__column-info">
+          <a href="#">База знаний</a>
+          <a href="#">Тарифы</a>
+          <a href="#">Мобильное приложение</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <div class="footer__column-title">Контакты</div>
+        <div class="footer__column-info">
+          <a href="mailto:hello@music.box">hello@music.box</a>
+          <div class="footer__text">Russia, Moscow. Music Box studio</div>
+          <a href="tel:+749999999999">+ 7 499 999 99 999</a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <div class="footer__column-title">Подписывайтесь</div>
+        <div class="footer__column-info footer__socials">
+          <a href="#"><img src="../img/Google+ 1.svg" alt="Google+" /></a>
+          <a href="#"><img src="../img/Twitter 1.svg" alt="Twitter" /></a>
+          <a href="#"><img src="../img/Facebook 1.svg" alt="Facebook" /></a>
+          <a href="#"><img src="../img/Instagram 1.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__row">
+    <div class="wraper">
+      <div class="footer__column">
+        <a href="#">Магазин</a>
+        <a href="#">Обслуживание</a>
+        <a href="#">Блог</a>
+        <a href="#">Контакты</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
