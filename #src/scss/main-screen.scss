@@ -124,3 +124,56 @@
 
     }
 }
+
+@media (max-width: 320px) {
+    .main-screen {
+        justify-content: center;
+        padding-bottom: 0;
+
+        & h1 {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        & h2 {
+            display: none;
+        }
+
+        &__container {
+            margin-top: 50px;
+        }
+
+
+        &__form-container {
+            margin-top: 10px;
+        }
+
+        // & input,
+        & button {
+            // padding: 0;
+            border-width: 0;
+        }
+
+        & input:focus-visible {
+            outline: none;
+        }
+
+        &__form-row {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &__wrap-input {
+            margin-bottom: 10px;
+        }
+
+        &__input,
+        &__submit {
+            padding: 10px 10px 10px 20px;
+        }
+
+        &__submit {
+            padding: 10px 10px;
+        }
+    }
+}

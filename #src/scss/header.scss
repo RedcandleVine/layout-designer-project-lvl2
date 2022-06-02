@@ -170,3 +170,15 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .header {
+        padding-top: 25px;
+
+        &__sub-item {
+            &:first-child {
+                padding: 0;
+            }
+        }
+    }
+}

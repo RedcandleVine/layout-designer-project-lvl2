@@ -82,3 +82,11 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .artist-screen {
+        &__container {
+            margin-top: 50px;
+        }
+    }
+}
