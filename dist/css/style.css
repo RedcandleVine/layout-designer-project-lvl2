@@ -475,7 +475,12 @@ p {
       margin-right: 0;
       margin-bottom: 25px; }
       .main-screen__wrap-input:last-child {
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+    .main-screen h2 {
+      display: none; }
+    .main-screen__text {
+      line-height: 1;
+      padding-top: 10px; } }
 
 @media (max-width: 320px) {
   .main-screen {
@@ -486,8 +491,6 @@ p {
     .main-screen h1 {
       font-size: 20px;
       line-height: 1; }
-    .main-screen h2 {
-      display: none; }
     .main-screen__container {
       margin-top: 50px; }
     .main-screen__form-container {
