@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 65px;
     }
 
     &__form-container {
@@ -102,9 +103,14 @@
 
 @media (max-width: 600px) {
     .main-screen {
+        height: 600px;
 
         justify-content: flex-end;
         padding-bottom: 50px;
+
+        &__container {
+            margin-top: 200px;
+        }
 
         &__form-row {
             &:first-child {
@@ -144,9 +150,9 @@
             line-height: 1;
         }
 
-        &__container {
-            margin-top: 50px;
-        }
+        // &__container {
+        //     margin-top: 50px;
+        // }
 
         &__form-container {
             margin-top: 10px;
