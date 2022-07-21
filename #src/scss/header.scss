@@ -1,6 +1,7 @@
 .header {
     height: 55px;
     padding-top: 25px;
+    position: relative;
 
     &__container {
         display: flex;
@@ -111,6 +112,7 @@
     .header {
         & .logo {
             margin-right: 50px;
+            margin-bottom: 15px;
             flex-wrap: nowrap;
         }
     }
