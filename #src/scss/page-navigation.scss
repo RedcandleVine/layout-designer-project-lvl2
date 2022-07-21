@@ -3,16 +3,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     &__container {
-        margin-top: 70px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        margin-top: 200px;
     }
 
     &__button-block {
@@ -42,11 +41,30 @@
 }
 
 @media (max-width: 600px) {
-    .page-nav__button-block a {
-        margin-bottom: 24px;
-    }
+    .page-nav {
+        height: initial;
+        padding-bottom: 50px;
 
-    .page-nav__button-block a:last-child {
-        margin-bottom: 0;
+        &__button-block {
+            & a {
+                margin-bottom: 24px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .page-nav {
+        justify-content: center;
+        padding-bottom: 0;
+        height: 550px;
+
+        &__container {
+            margin-top: 230px;
+        }
     }
 }
